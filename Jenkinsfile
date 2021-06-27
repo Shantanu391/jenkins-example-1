@@ -14,6 +14,9 @@ pipeline {
             steps {
                     echo 'mvn test'
             }
+        }
+        
+    }
             
             post
             {
@@ -25,6 +28,5 @@ pipeline {
                     bat 'git merge origin/feature-1'
                 }
             }
-        }
-    }
+    
 }
