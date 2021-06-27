@@ -21,6 +21,7 @@ pipeline {
                 {
                     bat 'git config --global user.email "shantanud391@gmail.com"'
                     bat 'git config --global user.name "Shantanu391"'
+                    bat 'git commit -m "update"
                     bat 'git checkout develop'
                     bat 'git merge origin/feature-1'
                 }
