@@ -14,6 +14,15 @@ pipeline {
             steps {
                     echo 'mvn test'
             }
+            
+            post
+            {
+                always
+                {
+                    sh 'git checkout develop'
+                    sh 'git merge origin/feature-1'
+                }
+            }
         }
     }
 }
