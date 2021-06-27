@@ -19,8 +19,8 @@ pipeline {
             {
                 always
                 {
-                    sh 'git checkout develop'
-                    sh 'git merge origin/feature-1'
+                    bat 'git checkout develop'
+                    bat 'git merge origin/feature-1'
                 }
             }
         }
