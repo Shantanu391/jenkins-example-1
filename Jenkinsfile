@@ -14,13 +14,7 @@ pipeline {
             steps {
                     echo 'mvn test'
             }
-        }
 
-
-        stage ('Deployment Stage') {
-            steps {
-                    echo 'mvn deploy'
-            }
         }
     }
 }
